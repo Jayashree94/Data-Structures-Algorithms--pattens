@@ -1,0 +1,10 @@
+const printnumbers =(num) =>{
+
+    if (num===0) return 0;
+    return num + printnumbers(num-1);
+
+
+}
+
+
+printnumbers(10);
