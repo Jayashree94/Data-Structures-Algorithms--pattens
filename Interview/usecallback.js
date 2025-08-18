@@ -13,7 +13,7 @@ export default function App() {
   // Without useCallback -> new function created every render
   const increment = useCallback(() => {
     setCount(c => c + 1);
-  }, []); // ✅ function reference is stable
+  }, []); 
 
   return (
     <div>
