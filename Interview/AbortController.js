@@ -15,3 +15,10 @@ async function fetchWithTimeout(url, options = {}, timeout = 5000) {
     throw error;
   }
 }
+
+
+
+fetchWithTimeout("https://jsonplaceholder.typicode.com/posts", {}, 2000)
+  .then(res => res.json())
+  .then(data => console.log("Data:", data))
+  .catch(err => console.error("Error:", err.message));
